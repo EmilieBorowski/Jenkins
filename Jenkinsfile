@@ -12,6 +12,7 @@ pipeline {
 			steps{
 				echo 'Pipeline Build Step'
 				echo "Build ${env.BUILD_NUMBER} on ${env.JENKINS_URL}"
+				echo "${params.Message}"
 				echo "${params.DEBUG_MODE}"
 				echo "${params.ENVIRONMENT}"
 				echo "${params.SECRET}"
