@@ -3,7 +3,7 @@ pipeline{
     agent any
     stages{
         stage('Build'){
-            steps {
+           steps {
                 echo 'Pipeline Build Step'
                 script {
                     myLogger.info 'Starting'
