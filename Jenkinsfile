@@ -12,7 +12,7 @@ pipeline {
 		stage('Build') {
 			steps{
 				echo 'Pipeline Build Step'
-				echo "Build ${env.BUILD_NUMBER} on ${env.JENKINS_URL} and the job_name is: ${env.JOB_NAME}}"
+				echo "Build ${env.BUILD_NUMBER} on ${env.JENKINS_URL} and the job_name is: ${env.JOB_NAME}"
 				echo "${params.Message}"
 				echo "${params.DEBUG_MODE}"
 				echo "${params.ENVIRONMENT}"
