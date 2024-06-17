@@ -18,6 +18,17 @@ pipeline {
 				echo "${params.ENVIRONMENT}"
 				echo "${params.SECRET}"
 			}
+			post{
+				success {
+					echo 'The steps were a success Horray!!'
+				}
+				failure {
+					echo 'The steps were a failure Whomp Whomp :('
+				}
+				cleanup {
+					echo 'Cleanup on aisle 3 please, cleanup on aisle 3'
+				}
+			}
 		}
 		stage('Test') {
 			steps{
